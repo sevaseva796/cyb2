@@ -1,0 +1,28 @@
+<html>
+	<head>
+		<title>
+			Hello
+		</title>
+		<script>
+			function sayHello() {
+				//alert("Hello, world!");
+				document.getElementById("hdr1").innerText = "Hello, world!";
+			}
+		</script>
+	</head>
+	<body>
+		<h1 id="hdr1">Demo</h1>
+		<p> asdas asdasd asdasdas ds</p>
+		<p> asdas asdasd asdasdas ds</p>
+		<p> asdas asdasd asdasdas ds</p>
+		<p> asdas asdasd asdasdas ds</p>
+		<a href="http://microsoft.com">See microsoft</a> <br />
+		<img src="images/Cat.jpg" style="width: 200px"/>
+		<br />
+		<button onclick="sayHello();">Click me</button>
+	</body>
+
+
+
+
+</html>

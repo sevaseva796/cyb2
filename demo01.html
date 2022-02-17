@@ -1,0 +1,48 @@
+<html>
+	<head>
+		<title>
+			Hello
+		</title>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" href="css/main.css" />
+		<script>
+			function sayHello() {
+				//alert("Hello, world!");
+				document.getElementById("hdr1").innerText = "Hello, world!";
+				document.getElementById("hdr1").style.color = "red";
+			}
+			function sayMiao() {
+			//alert("Мяу!");
+			document.getElementById("hdr1").innerText = "Мяу!";
+			document.getElementById("hdr1").style.color = "blue";
+			}
+			function sayDemo() {
+			//alert("Demo");
+			document.getElementById("hdr1").innerText = "Demo";
+			document.getElementById("hdr1").style.color = "white";
+			}
+			function play() {
+  			var audio = new Audio("audio/miao.mp3");
+  			audio.play();
+			}
+	
+		</script>
+		
+	</head>
+	<body>
+		<a href="index1.html">Индекс</a>
+		<h1 id="hdr1">Demo</h1>
+		<h2>Разное</h2>
+		<p> asdas asdasd asdasdas ds</p>
+		<p> asdas asdasd asdasdas ds</p>
+		<p> asdas asdasd asdasdas ds</p>
+		<p> asdas asdasd asdasdas ds</p>
+		<a href="http://microsoft.com">See microsoft</a> <br />
+		<img src="images/Cat.jpg" style="width: 200px" onclick ="sayMiao();" onmouseover="play();"onmouseout="sayDemo();"/>
+		<br />
+		<button onclick="sayHello();">Click me</button> <br />
+	</body>
+
+</html>
+
+
