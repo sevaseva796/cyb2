@@ -37,12 +37,12 @@
         
         //var_dump($result);
         if(count($result) == 0)
-            echo("Bad login!");
+            echo("Bad login or password!");
         else {
             echo "<h1>Welcome, $user!<h1>";
-            echo "Сейчас вы будете перенаправлены на калькулятор.";
+            echo "Сейчас вы будете перенаправлены на главную страницу.";
             $_SESSION["user"] = $user;
-            echo '<meta http-equiv="refresh" content="2; URL=calc.php"> ';
+            echo '<meta http-equiv="refresh" content="2; URL=index1.html"> ';
         }
      ?>
 </body>
