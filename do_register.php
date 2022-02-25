@@ -23,11 +23,7 @@
         $sql = "INSERT INTO users( Login, Pwdhash) VALUES('$user', '$hash')";
         mysqli_query($conn,$sql);
         
-        $statement = mysqli_prepare($conn, $sql);
-        //mysqli_stmt_bind_param($statement,"ss",$user,$hash);
-        mysqli_stmt_execute($statement);
-        $cursor = mysqli_stmt_get_result($statement);
-        $result = mysqli_fetch_all($cursor);
+       
 
         mysqli_close($conn);
         
